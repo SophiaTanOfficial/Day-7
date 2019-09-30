@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" type = "text/css" href= "static/style.css">
+    </head>
+    <body>
+        <img src = "static/micropig.jpg", width="200px">
+        
+        
+        <h1 style='color:{{user.color}}'>Hello {{ user.name }}!</h1>
+        <p>We can build a full webpage here</p>
+        <p>My favorite animal is {{ user.animal }}.</p>
+        <p>My favorite color is {{ user.color }}</p>
+        <h2>Today's weather</h2>
+            <ul>
+                <li>Temperature: {{weather.temperature}}</li>
+                <li>Cloud cover: {{weather.cloud}}</li>
+            </ul>
+       
+        <form method="post" action="/sendBreakfast">
+          <label for="nickname">What's your nickname?</label>
+          <input type='text' name='nickname'>
+          <label for="breakfast">What did you have for breakfast?</label>
+          <input type='text' name='breakfast'>
+          <input type='submit'>
+        </form>
+            <!--<input type="text" name="nickname" value="Enter your nickname"/>-->
+            <!--<input type="submit" value="Submit"/>-->
+
+    </body>
+</html>
